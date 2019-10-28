@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 class FilmItem extends Component {
   render(){
     return (
-    <p> Film Item Item Data</p>
+      <div class="film-item">
+        <h2>{this.props.name}</h2>
+        <p>{this.props.children}</p>
+      </div>
     )
   }
 }
