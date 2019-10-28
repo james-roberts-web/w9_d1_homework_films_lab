@@ -9,7 +9,7 @@ class FilmList extends Component {
       return (
         <div className="film-list">
           <FilmItem name={ film.name } key={ film.id } >
-          <a href={film.url}> View more info on IMDB</a>
+          <a className="info-button" href={film.url}> More Info </a>
           </FilmItem>
         </div>
       );

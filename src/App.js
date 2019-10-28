@@ -4,7 +4,9 @@ import './App.css';
 
 function App() {
   return (
-    <FilmBox />
+    <div className="main-container">
+      <FilmBox/>
+    </div>
   );
 
 }
