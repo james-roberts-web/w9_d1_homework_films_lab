@@ -7,8 +7,8 @@ class FilmList extends Component {
 
     const filmNodes = this.props.films.map(film => {
       return (
-        <FilmItem name={ film.name } key={ film.id }>
-        <p> {film.url} </p>
+        <FilmItem name={ film.name } key={ film.id } >
+        <a href={film.url}> View more Info </a>
         </FilmItem>
       );
     });
