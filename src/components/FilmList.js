@@ -7,9 +7,11 @@ class FilmList extends Component {
 
     const filmNodes = this.props.films.map(film => {
       return (
-        <FilmItem name={ film.name } key={ film.id } >
-        <a href={film.url}> View more Info </a>
-        </FilmItem>
+        <div className="film-list">
+          <FilmItem name={ film.name } key={ film.id } >
+          <a href={film.url}> View more info on IMDB</a>
+          </FilmItem>
+        </div>
       );
     });
 
